@@ -23,9 +23,9 @@ A secure and modern OTP (One-Time Password) email verification system built usin
 
 ![OTP Preview](./assets/IMG2.png.png)
 
-![OTP Preview](./assets/IMG3.png.png)
+![OTP Preview](./assets/IMG3.PNG.png)
 
-![OTP Preview](./assets/IMG4.png.png)
+![OTP Preview](./assets/IMG4.PNG.png)
 
 ![OTP Preview](./assets/IMG1.png.png)
 
