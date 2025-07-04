@@ -1,9 +1,9 @@
-📧 OTP Verification App
-
+**📧 OTP Verification App
+**
 A secure and modern OTP (One-Time Password) email verification system built using Node.js, Express, MongoDB, and Nodemailer. Users can enter their email, receive a 6-digit OTP, and verify it within 5 minutes. The UI includes animations, timer, and resend functionality.
 
-🚀 Features :
-
+**Features :
+**
 🔐 OTP generation with expiration time
 
 📩 Email delivery using Gmail SMTP via Nodemailer
@@ -19,8 +19,8 @@ A secure and modern OTP (One-Time Password) email verification system built usin
 🔒 Secrets stored securely using .env
 
 
-📸 Preview
-
+**📸 Preview
+**
 LOGIN FEATURE WITH MAIL ID
 ![OTP Preview](./assets/IMG2.png.png)
 
@@ -35,23 +35,24 @@ DYNAMIC TICK ANIMATION AFTER OTP VERIFICATION
 
 
 
-Technologies Used
+**Technologies Used
+**
 
-Node.js
+1. Node.js
 
-Express.js
+2. Express.js
 
-MongoDB (local)
+3. MongoDB (local)
 
-Mongoose
+4. Mongoose
 
-Nodemailer
+5. Nodemailer
 
-HTML5, CSS3, JavaScript
+6. HTML5, CSS3, JavaScript
 
-dotenv
+7. dotenv
 
 
-🧾 License
-
+**🧾 License
+**
 This project is open-source and free to use.
