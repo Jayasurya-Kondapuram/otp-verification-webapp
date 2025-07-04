@@ -1,0 +1,12 @@
+# Don't track environment secrets
+node_modules/
+.env
+
+# Ignore node modules
+node_modules/
+
+# System files
+.DS_Store
+
+# Optional: log files
+*.log

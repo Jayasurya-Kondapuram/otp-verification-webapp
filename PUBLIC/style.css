@@ -1,0 +1,223 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  height: 100vh;
+  background: linear-gradient(270deg,
+    #ff8ec9,
+    #88f4ff,
+    #a2f5c3,
+    #ff8ec9);
+  background-size: 800% 800%;
+  animation: gradientWave 15s ease infinite;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+
+@keyframes gradientWave {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+
+/* === Card Container === */
+.container {
+    background: #2c2f3a;
+    padding: 2rem;
+    border-radius: 16px;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.6);
+    width: 350px;
+    text-align: center;
+    animation: fadeIn 0.5s ease-in;
+}
+
+/* === Form Elements === */
+.form-group {
+    margin-bottom: 1.5rem;
+    text-align: left;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #ddd;
+    font-weight: bold;
+}
+
+input {
+    width: 100%;
+    padding: 0.75rem;
+    background: #3b3f4e;
+    color: #fff;
+    border: 1px solid #555;
+    border-radius: 6px;
+    box-sizing: border-box;
+}
+
+input:read-only {
+    background-color: #4a4e5e;
+    color: #aaa;
+}
+
+/* === Buttons === */
+button {
+    width: 100%;
+    padding: 0.75rem;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    background: linear-gradient(135deg, #5f72be, #9921e8);
+    color: white;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background: linear-gradient(135deg, #4a60d4, #801ce5);
+}
+
+/* === Message Styling === */
+.message {
+    margin-top: 1rem;
+    font-weight: bold;
+}
+
+.success {
+    color: #4CAF50;
+}
+
+.error {
+    color: #e74c3c;
+}
+
+/* === Tick Animation Styling === */
+/* === ULTRA 3D Tick Animation === */
+#tick-animation {
+    display: none;
+    text-align: center;
+    margin-top: 40px;
+    animation: fadeIn 0.5s ease-in;
+}
+
+.checkmark {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    display: inline-block;
+    background: linear-gradient(145deg, #2e323f, #242733);
+    box-shadow:
+        0 10px 30px rgba(0, 255, 120, 0.3),
+        inset 0 0 25px rgba(0, 255, 120, 0.3),
+        0 0 0 4px #1c1f29;
+    animation: pulseShadow 2s infinite ease-in-out;
+    transform-style: preserve-3d;
+    perspective: 800px;
+    position: relative;
+}
+
+/* Glowing Ring Effect */
+.checkmark::before {
+    content: '';
+    position: absolute;
+    width: 130%;
+    height: 130%;
+    top: -15%;
+    left: -15%;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(0,255,120,0.15), transparent 70%);
+    filter: blur(10px);
+    z-index: 0;
+}
+
+/* Circle outline drawing */
+.checkmark__circle {
+    stroke-dasharray: 166;
+    stroke-dashoffset: 166;
+    stroke: #00ff80;
+    stroke-width: 3;
+    fill: none;
+    animation: drawCircle 0.6s ease-out forwards;
+}
+
+/* Tick Path Drawing */
+.checkmark__check {
+    stroke-dasharray: 48;
+    stroke-dashoffset: 48;
+    stroke: #ffffff;
+    stroke-width: 4;
+    fill: none;
+    animation: drawCheck 0.4s ease-out 0.6s forwards;
+}
+
+/* === Animations === */
+@keyframes drawCircle {
+    100% {
+        stroke-dashoffset: 0;
+    }
+}
+
+@keyframes drawCheck {
+    100% {
+        stroke-dashoffset: 0;
+    }
+}
+
+@keyframes pulseShadow {
+    0%, 100% {
+        box-shadow:
+            0 10px 30px rgba(0, 255, 120, 0.3),
+            inset 0 0 25px rgba(0, 255, 120, 0.3),
+            0 0 0 4px #1c1f29;
+        transform: rotateY(0deg) rotateX(0deg);
+    }
+    50% {
+        box-shadow:
+            0 10px 40px rgba(0, 255, 180, 0.6),
+            inset 0 0 30px rgba(0, 255, 180, 0.4),
+            0 0 0 4px #1c1f29;
+        transform: rotateY(15deg) rotateX(10deg);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* === Timer Display === */
+.otp-timer {
+  font-size: 0.85rem;
+  color: #00e676;
+  margin-bottom: 8px;
+  font-weight: 500;
+}
+
+.link-button {
+  background: none;
+  border: none;
+  color: #00bcd4;
+  cursor: pointer;
+  font-size: 0.9rem;
+  padding: 0;
+  outline: none;
+  text-decoration: none;
+}
+
+.link-button:hover,
+.link-button:focus,
+.link-button:active {
+  color: #00e5ff;
+  background: none;
+  text-decoration: none;
+  outline: none;
+  box-shadow: none;
+}
+
