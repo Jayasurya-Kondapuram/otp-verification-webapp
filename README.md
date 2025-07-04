@@ -21,12 +21,16 @@ A secure and modern OTP (One-Time Password) email verification system built usin
 
 📸 Preview
 
+LOGIN FEATURE WITH MAIL ID
 ![OTP Preview](./assets/IMG2.png.png)
 
+OTD SENT AND VERIFICATION
 ![OTP Preview](./assets/IMG3.PNG.png)
 
+INVALID OTP 
 ![OTP Preview](./assets/IMG4.PNG.png)
 
+DYNAMIC TICK ANIMATION AFTER OTP VERIFICATION
 ![OTP Preview](./assets/IMG1.png.png)
 
 
